@@ -1,0 +1,129 @@
+/* FONTS
+font-family: 'Baloo Da 2', cursive; --HEADING 2
+font-family: 'IBM Plex Sans KR', sans-serif; --
+font-family: 'Megrim', cursive; --HEADINGS 1
+font-family: 'Share', cursive; --ALL OTHER BODY TEXT
+font-family: 'Zen Kaku Gothic Antique', sans-serif; */
+
+/* COLORS */
+
+
+
+/* UNIVERSAL STYLES */
+
+body {
+    font-family: 'Share', cursive;
+    background-color: #55286F;
+    color: #E7CFCD;
+    
+}
+
+a:link {
+    color: #E7CFCD;
+}
+
+a:visited {
+    color: #CAB1BD;
+}
+
+h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Share', cursive;
+    font-size: 30px;
+}
+
+a {
+    font-family: 'Share', cursive;
+    font-size: 25px;
+}
+
+ul {
+    font-family: 'Share', cursive;
+}
+
+footer {
+    font-family: 'Share', cursive;
+}
+
+.lyric-page {
+    text-align: center;
+}
+
+/* HOME PAGE STYLES */
+
+/* NAVIGATION MENU */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7em;
+    background-color: #210B2C;
+    
+}
+
+.header-logo {
+    font-size: 2em;
+}
+
+.header-options {
+    font-size: 2em;
+}
+
+/* WEBSITE DESCRIPTION/OBJECTIVES */
+
+main {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-about {
+  
+}
+
+
+
+
+
+/* ARTIST DIRECTORY STYLES */
+
+.artist-directory {
+    text-align: center;
+}
+
+
+/* ARTIST PAGE STYLES */
+
+.artist-page {
+    text-align: center;
+}
+
+
+/* ALBUM DIRECTORY STYLES */
+
+.album-directory {
+    text-align: center;
+}
+
+/* ALBUM SONG DIRECTORY STYLES */
+
+.album-song-directory {
+    text-align: center;
+}
+
+
+/* LYRICS PAGE STYLES */
