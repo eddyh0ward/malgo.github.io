@@ -84,16 +84,28 @@ nav {
 
 /* WEBSITE DESCRIPTION/OBJECTIVES */
 
-main {
+.main-description {
     display: flex; 
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.home-about {
-  
+.main-description img {
+    height: 200px;
+    width: 200px;
+    text-align: center;
 }
 
+.home-section {
+    height: 400px; 
+}
+
+
+.home-about p {
+    height: 100px;
+    text-align: center;
+}
 
 
 
@@ -113,6 +125,11 @@ main {
     text-align: center;
 }
 
+.artist-page img {
+    height: 200px;
+    width: 200px;
+}
+
 
 /* ALBUM DIRECTORY STYLES */
 
@@ -124,6 +141,11 @@ main {
 
 .album-song-directory {
     text-align: center;
+}
+
+.album-song-directory img {
+    height: 200px;
+    width: 200px;
 }
 
 
