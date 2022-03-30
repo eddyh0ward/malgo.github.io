@@ -1,11 +1,10 @@
 /* FONTS
 font-family: 'Baloo Da 2', cursive; --HEADING 2
-font-family: 'IBM Plex Sans KR', sans-serif; --
+font-family: 'IBM Plex Sans KR', sans-serif; -- KOREAN TEXT
 font-family: 'Megrim', cursive; --HEADINGS 1
 font-family: 'Share', cursive; --ALL OTHER BODY TEXT
-font-family: 'Zen Kaku Gothic Antique', sans-serif; */
-
-/* COLORS */
+font-family: 'Zen Kaku Gothic Antique', sans-serif; --JAPANESE TEXT
+*/
 
 
 
@@ -28,7 +27,7 @@ a:visited {
 
 h1 {
     font-family: 'Megrim', cursive;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 h2 {
@@ -104,6 +103,8 @@ main {
 .artist-directory {
     text-align: center;
 }
+
+
 
 
 /* ARTIST PAGE STYLES */
