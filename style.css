@@ -150,3 +150,15 @@ nav {
 
 
 /* LYRICS PAGE STYLES */
+
+.lyric-page span {
+    background-color:  #55286F;
+    color: #E7CFCD;
+    transition: .2s;
+}
+
+.lyric-page span:hover {
+    background-color:  #E7CFCD;
+    color: #55286F;
+    cursor: pointer;
+}
