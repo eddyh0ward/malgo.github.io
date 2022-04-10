@@ -151,14 +151,46 @@ nav {
 
 /* LYRICS PAGE STYLES */
 
+/* this defines transition to hover state and the pre-highlighted state */
 .lyric-page span {
     background-color:  #55286F;
     color: #E7CFCD;
     transition: .2s;
 }
 
+/* this defines the state of the word upon hover */
 .lyric-page span:hover {
     background-color:  #E7CFCD;
     color: #55286F;
-    cursor: pointer;
+    cursor: default;
+}
+
+.tooltip {
+    position: relative; /* makes the tooltip span a container for tooltip text */
+}
+
+.tooltip::before {
+    content: attr(data-text); /* this takes data-text attr of parent element and uses it as the content */
+    position: absolute; /* changing this to relative displaces the whole block of main lyric text */
+
+    /* vertically center */
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* basic styles */
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #E7CFCD;
+    text-align: left;
+
+    display: none; /* hides box by default */
+
+}
+
+/* makes the tooltip text show when hovering */
+
+.tooltip:hover::before {
+    display: block;
 }
