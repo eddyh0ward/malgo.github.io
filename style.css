@@ -14,7 +14,9 @@ body {
     font-family: 'Share', cursive;
     background-color: #55286F;
     color: #E7CFCD;
-    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 a:link {
@@ -169,6 +171,7 @@ nav {
     position: relative; /* makes the tooltip span a container for tooltip text */
 }
 
+/* this is the state before the user hovers */
 .tooltip::before {
     content: attr(data-text); /* this takes data-text attr of parent element and uses it as the content */
     position: absolute; /* changing this to relative displaces the whole block of main lyric text */
@@ -178,13 +181,13 @@ nav {
     transform: translateY(-50%);
 
     /* basic styles */
-    width: 300px;
+    width: 250px;
     padding: 10px;
     border-radius: 10px;
     background-color: #000;
     color: #E7CFCD;
     text-align: left;
-
+    margin-left: 50px;
     display: none; /* hides box by default */
 
 }
@@ -193,4 +196,5 @@ nav {
 
 .tooltip:hover::before {
     display: block;
+
 }
