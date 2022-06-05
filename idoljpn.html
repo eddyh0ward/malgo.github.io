@@ -3,12 +3,34 @@
     <head>
         <title>IDOL (日本語)</title>
         <link rel="stylesheet" href="style.css">
+        <script src="BTSmots7Journey.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600&family=IBM+Plex+Sans+KR:wght@200;300;400;500;600&family=Megrim&family=Share:ital,wght@0,400;0,700;1,400&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap" rel="stylesheet">
     </head>
     <body class="lyric-page">
+
+        <nav class="main-options">
+       
+            <div class="header-logo">
+                <h1>mal*go 말*語</h1>
+            </div>
+    
+            <div class="header-options">
+                <a href="index.html">Home</a>
+                <a href="artists.html">Artists</a>
+                <a href="albums.html">Albums</a>
+                <a href="about.html">About</a>
+                <!-- <a href="contact.html">Contact</a> -->
+            </div>
+    
+        </nav>
+
         <h1>IDOL (日本語)</h1>
+
+        <!-- <div class="popup" onclick="myFunction()">
+            <span class="popuptext" id="myPopup"></span>
+        </div> -->
 
             <p>
                 Verse 1 (RM & J-Hope): <br>
@@ -16,61 +38,81 @@
                     You can call me idol <br>
 
 
-                    <span data-text="どう (dou): how"
-                                    class="tooltip">どう</span>
-                    <span data-text="よばれたって (yobaretatte): to call out"
-                                    class="tooltip">呼ばれたって</span>
-                    <span data-text="かまわない (kamawanai): it doesn't matter"
-                                    class="tooltip">構わない</span> <br>
+                    <div class="popup" onclick="myFunctionDou()">どう
+                        <span class="popuptext" id="dou">どう (dou): how</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionYobaretatte()">呼ばれたって
+                        <span class="popuptext" id="yobaretatte">よばれたって (yobaretatte): to call out</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionKamawanai()">構わない
+                        <span class="popuptext" id="kamawanai">かまわない (kamawanai): it doesn't matter</span>
+                    </div> <br>
 
 
                     I don't care <br>
                     I'm proud of it <br>
 
 
-                    <span data-text="やりたい (yaritai): to want to do"
-                                    class="tooltip">やりたい</span>
-                    <span data-text="ように (youni): visibly; openly"
-                                    class="tooltip">ように</span> <br>
+                    <div class="popup" onclick="myFunctionYaritai()">やりたい
+                        <span class="popuptext" id="yaritai">やりたい (yaritai): to want to do</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionYouni3()">ように
+                        <span class="popuptext" id="youni3">ように (youni): visibly; openly</span>
+                    </div> <br>
 
 
                     No more irony <br>
 
 
-                    <span data-text="かわらず (kawarazu): unchanged"
-                                    class="tooltip">変わらず</span>
-                    <span data-text="きた (kita): to (have) come from"
-                                    class="tooltip">来た</span>
-                    <span data-text="すとーりー (sutoorii): story"
-                                    class="tooltip">ストーリー</span> <br>
+                    <div class="popup" onclick="myFunctionKawarazu()">変わらず
+                        <span class="popuptext" id="kawarazu">かわらず (kawarazu): unchanged</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionKita()">来た
+                        <span class="popuptext" id="kita">きた (kita): to (have) come from</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionSutoorii()">ストーリー
+                        <span class="popuptext" id="sutoorii">すとーりー (sutoorii): story</span>
+                    </div> <br>
             </p>
 
             <p>
                 Verse 2 (Suga & RM): <br>
-                    <span data-text="なんだっていい (nandatteii): it doesn't matter what"
-                                    class="tooltip">なんだっていい</span>
-                    <span data-text="だれか (dareka): someone"
-                                    class="tooltip">誰か</span>
-                    <span data-text="の (no): indicates possessive"
-                                    class="tooltip">の</span>
-                    <span data-text="うしろゆび (ushiroyubi): walking about (behind one's back)"
-                                    class="tooltip">後ろ指</span>
-                    <span data-text="なんて (nante): expressing surprise; disgust; disbelief"
-                                    class="tooltip">なんて</span> <br>
+
+                    <div class="popup" onclick="myFunctionNandatteii()">なんだっていい
+                        <span class="popuptext" id="nandatteii">なんだっていい (nandatteii): it doesn't matter what</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionDareka()">誰か
+                        <span class="popuptext" id="dareka">だれか (dareka): someone</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionNo41()">の
+                        <span class="popuptext" id="no41">の (no): indicates possessive</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionUshiroyubi()">後ろ指
+                        <span class="popuptext" id="ushiroyubi">うしろゆび (ushiroyubi): walking about (behind one's back)</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionNante2()">なんて
+                        <span class="popuptext" id="nante2">なんて (nante): expressing surprise; disgust; disbelief</span>
+                    </div> <br>
 
 
-                    <span data-text="きにしない (kinishinai): not caring"
-                                    class="tooltip">気にしない</span>
-                    <span data-text="から (kara): used for explanation"
-                                    class="tooltip">から</span>
-                    <span data-text="その (sono): that"
-                                    class="tooltip">その</span>
-                    <span data-text="りゆう (riyuu): reason"
-                                    class="tooltip">理由</span>
-                    <span data-text="が (ga): indicates sentence subject"
-                                    class="tooltip">が</span>
-                    <span data-text="なんだって (nandatte): for what reason?"
-                                    class="tooltip">なんだって</span> <br>
+                    <div class="popup" onclick="myFunctionKinishinai()">気にしない
+                        <span class="popuptext" id="kinishinai">きにしない (kinishinai): not caring</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionKara4()">から
+                        <span class="popuptext" id="kara4">から (kara): used for explanation</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionSono7()">その
+                        <span class="popuptext" id="sono7">その (sono): that</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionRiyuu()">理由
+                        <span class="popuptext" id="riyuu">りゆう (riyuu): reason</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionGa10()">が
+                        <span class="popuptext" id="ga10">が (ga): indicates sentence subject</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionNandatte()">なんだって
+                        <span class="popuptext" id="nandatte">なんだって (nandatte): for what reason?</span>
+                    </div> <br>
 
 
                     I know what I am, I know what I want <br>
@@ -80,25 +122,32 @@
 
             <p>
                 Pre-chorus (V, RM, & Jimin): <br>
+
                     Oh why you all 
-                    <span data-text="なにを (nani(w)o): what?"
-                                    class="tooltip">何を</span>
-                    <span data-text="さわいでる (sawaideru): being noisy"
-                                    class="tooltip">騒いでる</span>
-                    <span data-text="の (no): indicates emotional emphasis"
-                                    class="tooltip">の</span> ? <br>
+                    <div class="popup" onclick="myFunctionNaniwo()">何を
+                        <span class="popuptext" id="naniwo">なにを (nani(w)o): what?</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionSawaideru()">騒いでる
+                        <span class="popuptext" id="sawaideru">さわいでる (sawaideru): being noisy</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionNo42()">の
+                        <span class="popuptext" id="no42">の (no): indicates emotional emphasis</span>
+                    </div> ? <br>
 
 
                     Talkin', talkin', talkin' <br>
 
 
                     I do what I do, 
-                    <span data-text="だから (dakara): so; consequently"
-                                    class="tooltip">だから</span>
-                    <span data-text="かまうな (kamauna): to not care about"
-                                    class="tooltip">構うな</span>
-                    <span data-text="もう (mou): further; more"
-                                    class="tooltip">もう</span> <br>
+                    <div class="popup" onclick="myFunctionDakara2()">だから
+                        <span class="popuptext" id="dakara2">だから (dakara): so; consequently</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionKamauna()">構うな
+                        <span class="popuptext" id="kamauna">かまうな (kamauna): to not care about</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionMou5()">もう
+                        <span class="popuptext" id="mou5">もう (mou): further; more</span>
+                    </div> <br>
 
 
                     Dirty, dirty <br>
@@ -127,40 +176,52 @@
 
             <p>
                 Verse 3 (J-Hope & Suga): <br>
+
                     Face off just like 
-                    <span data-text="ジョン•うー (jon uu): John Woo"
-                                    class="tooltip">ジョン•ウー</span>, ay <br>
+                    <div class="popup" onclick="myFunctionJonuu()">ジョン•ウー
+                        <span class="popuptext" id="jonuu">ジョン•うー (jon uu): John Woo</span>
+                    </div>, ay <br>
 
 
                     Top star with that spotlight, ay <br>
 
 
-                    <span data-text="ときに (tokini): sometimes"
-                                    class="tooltip">時に</span>
-                    <span data-text="すーぱーひーろー (suupaahiiroo): super hero"
-                                    class="tooltip">スーパーヒーロー</span>
-                    <span data-text="になって (ninatte): to change into"
-                                    class="tooltip">になって</span> <br>
+                    <div class="popup" onclick="myFunctionTokini2()">時に
+                        <span class="popuptext" id="tokini2">ときに (tokini): sometimes</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionSuupaahiiroo()">スーパーヒーロー
+                        <span class="popuptext" id="suupaahiiroo">すーぱーひーろー (suupaahiiroo): superhero</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionNinatte()">になって
+                        <span class="popuptext" id="ninatte">になって (ninatte): to change into</span>
+                    </div> <br>
 
 
-                    <span data-text="まわす (mawasu): to turn"
-                                    class="tooltip">回す</span>
-                    <span data-text="きみ (kimi): you"
-                                    class="tooltip">君</span>
-                    <span data-text="の (no): indicates possessive"
-                                    class="tooltip">の</span> Anpanman <br>
+                    <div class="popup" onclick="myFunctionMawasu()">回す
+                        <span class="popuptext" id="mawasu">まわす (mawasu): to turn</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionKimi36()">君
+                        <span class="popuptext" id="kimi36">きみ (kimi): you</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionNo43()">の
+                        <span class="popuptext" id="no43">の (no): indicates possessive</span>
+                    </div> Anpanman <br>
 
 
-                    <span data-text="じかん (jikan): time"
-                                    class="tooltip">時間</span>
-                    <span data-text="たりない (tarinai): insufficient; not enough"
-                                    class="tooltip">足りない</span> <br>
+                    <div class="popup" onclick="myFunctionJikan()">時間
+                        <span class="popuptext" id="jikan">じかん (jikan): time</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionTarinai()">足りない
+                        <span class="popuptext" id="tarinai">たりない (tarinai): insufficient; not enough</span>
+                    </div> <br>
 
 
-                    <span data-text="まよう (mayou): to get lost"
-                                    class="tooltip">迷う</span>
-                    <span data-text="ひますらない (himasuranai): without free time"
-                                    class="tooltip">暇すらない</span> <br>
+                    <div class="popup" onclick="myFunctionMayou()">迷う
+                        <span class="popuptext" id="mayou">まよう (mayou): to get lost</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionHimasuranai()">暇すらない
+                        <span class="popuptext" id="himasuranai">ひますらない (himasuranai): without free time</span>
+                    </div> <br>
 
 
                     I do my thing, I love myself <br>
@@ -168,60 +229,84 @@
 
             <p>
                 Verse 4 (Jungkook & V): <br>
+
                     I love myself, I love my fans <br>
                     Love my dance and my what <br>
 
 
-                    <span data-text="おれ (ore): me"
-                                    class="tooltip">俺</span>
-                    <span data-text="の (no): indicates possessive"
-                                    class="tooltip">の</span>
-                    <span data-text="なかに (nakani): among"
-                                    class="tooltip">中に</span>
-                    <span data-text="いろんな (ironna): various"
-                                    class="tooltip">いろんな</span>
-                    <span data-text="じぶん (jibun): myself"
-                                    class="tooltip">自分</span>
-                    <span data-text="が (ga): indicates sentence subject"
-                                    class="tooltip">が</span>
-                    <span data-text="なにびとも (nanibitomo): (no matter) who; everyone"
-                                    class="tooltip">何人も</span>
-                    <span data-text="いる (iru): to be"
-                                    class="tooltip">いる</span> <br>
+                    <div class="popup" onclick="myFunctionOre2()">俺
+                        <span class="popuptext" id="ore2">おれ (ore): me</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionNo44()">の
+                        <span class="popuptext" id="no44">の (no): indicates possessive</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionNakani()">中に
+                        <span class="popuptext" id="nakani">なかに (nakani): among</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionIronna()">いろんな
+                        <span class="popuptext" id="ironna">いろんな (ironna): various</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionJibun5()">自分
+                        <span class="popuptext" id="jibun5">じぶん (jibun): myself</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionGa11()">が
+                        <span class="popuptext" id="ga11">が (ga): indicates sentence subject</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionNanibitomo()">何人も
+                        <span class="popuptext" id="nanibitomo">なにびとも (nanibitomo): (no matter) who; everyone</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionIru2()">いる
+                        <span class="popuptext" id="iru2">いる (iru): to be</span>
+                    </div> <br>
 
 
-                    <span data-text="きょう (kyou): today"
-                                    class="tooltip">今日</span>
-                    <span data-text="も (mo): too; also"
-                                    class="tooltip">も</span>
-                    <span data-text="ちがう (chigau): to differ (from)"
-                                    class="tooltip">違う</span>
-                    <span data-text="じぶん (jibun): myself"
-                                    class="tooltip">自分</span>
-                    <span data-text="が (ga): indicates sentence subject"
-                                    class="tooltip">が</span>
-                    <span data-text="いて (ite): to be"
-                                    class="tooltip">いて</span> <br>
+
+                    <div class="popup" onclick="myFunctionKyou()">今日
+                        <span class="popuptext" id="kyou">きょう (kyou): today</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionMo11()">も
+                        <span class="popuptext" id="mo11">も (mo): too; also</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionChigau()">違う
+                        <span class="popuptext" id="chigau">ちがう (chigau): to differ (from)</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionJibun6()">自分
+                        <span class="popuptext" id="jibun6">じぶん (jibun): myself</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionGa12()">が
+                        <span class="popuptext" id="ga12">が (ga): indicates sentence subject</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionIte()">いて
+                        <span class="popuptext" id="ite">いて (ite): to be</span>
+                    </div> <br>
 
 
-                    <span data-text="じぶん (jibun): myself"
-                                    class="tooltip">自分</span>
-                    <span data-text="を ((w)o): indicates direct object of action"
-                                    class="tooltip">を</span>
-                    <span data-text="さらけだして (sarakedashite): to expose; to disclose"
-                                    class="tooltip">さらけ出して</span>
-                    <span data-text="いく (iku): to go; to move (in a direction)"
-                                    class="tooltip">いく</span> <br>
+                    <div class="popup" onclick="myFunctionJibun7()">自分
+                        <span class="popuptext" id="jibun7">じぶん (jibun): myself</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionWo26()">を
+                        <span class="popuptext" id="wo26">を ((w)o): indicates direct object of action</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionSarakedashite()">さらけ出して
+                        <span class="popuptext" id="sarakedashite">さらけだして (sarakedashite): to expose; to disclose</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionIku()">いく
+                        <span class="popuptext" id="iku">いく (iku): to go; to move (in a direction)</span>
+                    </div> <br>
 
 
-                    <span data-text="なやまない (nayamanai): to (not) be worried"
-                                    class="tooltip">悩まない</span>
-                    <span data-text="ぜ (ze): I can tell you"
-                                    class="tooltip">ぜ</span>
-                    <span data-text="さき (saki): ahead; beyond"
-                                    class="tooltip">先</span>
-                    <span data-text="へ ((h)e): towards"
-                                    class="tooltip">へ</span> <br>
+                    <div class="popup" onclick="myFunctionNayamanai()">悩まない
+                        <span class="popuptext" id="nayamanai">なやまない (nayamanai): to (not) be worried</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionZe2()">ぜ
+                        <span class="popuptext" id="ze2">ぜ (ze): I can tell you</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionSaki2()">先
+                        <span class="popuptext" id="saki2">さき (saki): ahead; beyond</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionHe4()">へ
+                        <span class="popuptext" id="he4">へ ((h)e): towards</span>
+                    </div> <br>
 
 
                     Runnin' man, runnin' man, runnin' man <br>
@@ -229,25 +314,32 @@
 
             <p>
                 Pre-chorus (Jin, Suga, Jungkook, & Jimin): <br>
+
                     Oh why you all 
-                    <span data-text="なにを (nani(w)o): what?"
-                                    class="tooltip">何を</span>
-                    <span data-text="さわいでる (sawaideru): being noisy"
-                                    class="tooltip">騒いでる</span>
-                    <span data-text="の (no): indicates emotional emphasis"
-                                    class="tooltip">の</span> ? <br>
+                    <div class="popup" onclick="myFunctionNaniwo2()">何を
+                        <span class="popuptext" id="naniwo2">なにを (nani(w)o): what?</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionSawaideru2()">騒いでる
+                        <span class="popuptext" id="sawaideru2">さわいでる (sawaideru): being noisy</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionNo45()">の
+                        <span class="popuptext" id="no45">の (no): indicates emotional emphasis</span>
+                    </div> ? <br>
 
 
                     Talkin', talkin', talkin' <br>
 
 
                     I do what I do, 
-                    <span data-text="だから (dakara): so; consequently"
-                                    class="tooltip">だから</span>
-                    <span data-text="かまうな (kamauna): to not care about"
-                                    class="tooltip">構うな</span>
-                    <span data-text="もう (mou): further; more"
-                                    class="tooltip">もう</span> <br>
+                    <div class="popup" onclick="myFunctionDakara3()">だから
+                        <span class="popuptext" id="dakara3">だから (dakara): so; consequently</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionKamauna2()">構うな
+                        <span class="popuptext" id="kamauna2">かまうな (kamauna): to not care about</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionMou6()">もう
+                        <span class="popuptext" id="mou6">もう (mou): further; more</span>
+                    </div> <br>
 
 
                     Dirty, dirty <br>
@@ -276,27 +368,34 @@
 
             <p>
                 Bridge (Jimin & Jin): <br>
+
                     I'm so fine wherever I go (go go go go) <br>
 
 
-                    <span data-text="たとえ (tatoe): example"
-                                    class="tooltip">たとえ</span>
-                    <span data-text="とおまわり (toomawari): detour; roundabout way"
-                                    class="tooltip">遠回り</span>
-                    <span data-text="でも (demo): nevertheless; still"
-                                    class="tooltip">でも</span> <br>
+                    <div class="popup" onclick="myFunctionTatoe()">たとえ
+                        <span class="popuptext" id="tatoe">たとえ (tatoe): example</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionToomawari()">遠回り
+                        <span class="popuptext" id="toomawari">とおまわり (toomawari): detour; roundabout way</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionDemo5()">でも
+                        <span class="popuptext" id="demo5">でも (demo): nevertheless; still</span>
+                    </div> <br>
 
 
                     It's okay, I'm in love with my-myself <br>
 
 
                     It's okay, 
-                    <span data-text="いま (ima): now"
-                                    class="tooltip">今</span>
-                    <span data-text="が (ga): indicates sentence subject"
-                                    class="tooltip">が</span>
-                    <span data-text="しあわせ (shiawase): happiness"
-                                    class="tooltip">幸せ</span> <br>
+                    <div class="popup" onclick="myFunctionIma12()">今
+                        <span class="popuptext" id="ima12">いま (ima): now</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionGa13()">が
+                        <span class="popuptext" id="ga13">が (ga): indicates sentence subject</span>
+                    </div>
+                    <div class="popup" onclick="myFunctionShiawase2()">幸せ
+                        <span class="popuptext" id="shiawase2">しあわせ (shiawase): happiness</span>
+                    </div> <br>
             </p>
 
             <p>
