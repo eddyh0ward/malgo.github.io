@@ -1,7 +1,7 @@
 /* FONTS
 font-family: 'Baloo Da 2', cursive; --HEADING 2
 font-family: 'IBM Plex Sans KR', sans-serif; -- KOREAN TEXT
-font-family: 'Megrim', cursive; --HEADINGS 1
+font-family: 'Megrim', cursive; --HEADING 1
 font-family: 'Share', cursive; --ALL OTHER BODY TEXT
 font-family: 'Zen Kaku Gothic Antique', sans-serif; --JAPANESE TEXT
 */
@@ -13,18 +13,18 @@ font-family: 'Zen Kaku Gothic Antique', sans-serif; --JAPANESE TEXT
 body {
     font-family: 'Share', cursive;
     background-color: #55286F;
-    color: #E7CFCD;
+    color: #FFB6C1;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 a:link {
-    color: #E7CFCD;
+    color: #FFB6C1;
 }
 
 a:visited {
-    color: #CAB1BD;
+    color: #FFD0D7;
 }
 
 h1 {
@@ -59,9 +59,8 @@ footer {
     font-family: 'Share', cursive;
 }
 
-.lyric-page {
-    text-align: center;
-}
+
+
 
 /* HOME PAGE STYLES */
 
@@ -76,13 +75,18 @@ nav {
     
 }
 
-.header-logo {
+.main-options {
+    font-size: 2em;
+    height: 200px;
+}
+
+/* .header-logo {
     font-size: 2em;
 }
 
 .header-options {
     font-size: 2em;
-}
+} */
 
 /* WEBSITE DESCRIPTION/OBJECTIVES */
 
@@ -91,6 +95,11 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.banner-section {
+    height: 200px;
+    margin-top: 35px;
 }
 
 .main-description img {
@@ -153,48 +162,142 @@ nav {
 
 /* LYRICS PAGE STYLES */
 
+.lyric-page {
+    text-align: center;
+    font-size: 30px;
+}
+
 /* this defines transition to hover state and the pre-highlighted state */
-.lyric-page span {
+.lyric-page .popup {
     background-color:  #55286F;
     color: #E7CFCD;
     transition: .2s;
 }
 
 /* this defines the state of the word upon hover */
-.lyric-page span:hover {
+.lyric-page .popup:hover {
     background-color:  #E7CFCD;
     color: #55286F;
-    cursor: default;
+    cursor: pointer;
 }
 
-.tooltip {
-    position: relative; /* makes the tooltip span a container for tooltip text */
+/* Popup Container */
+
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
 }
 
-/* this is the state before the user hovers */
-.tooltip::before {
-    content: attr(data-text); /* this takes data-text attr of parent element and uses it as the content */
-    position: absolute; /* changing this to relative displaces the whole block of main lyric text */
+/* The Popup (appears on top) */
 
-    /* vertically center */
-    top: 50%;
-    transform: translateY(-50%);
-
-    /* basic styles */
-    width: 250px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #000;
-    color: #E7CFCD;
-    text-align: left;
-    margin-left: 50px;
-    display: none; /* hides box by default */
-
+.popup .popuptext {
+	visibility: hidden;
+	width: 300px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute; /* this is what allows the visible text to center */
+	z-index: 1;
+	bottom: 125%;
+	left: -80%;
+	margin-left: -80px;
 }
 
-/* makes the tooltip text show when hovering */
+/* Popup Arrow */
 
-.tooltip:hover::before {
-    display: block;
+/* .popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+} */
 
+/* Toggle this class when clicking on the popup container (hide and show) */
+
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 0.2s;
+	animation: fadeIn 0.2s;
+}
+
+/* Add animation */
+
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+
+
+
+/* FLASH CARD PAGE STYLES */
+
+ .flash-page {
+    text-align: center;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+/* .flash-page .flash-title {
+    align-self: center;
+    margin-top: 100px;
+} */
+
+.card {
+    height: 200px;
+    width: 350px;
+    background-color: transparent;
+    perspective: 1000px;
+    margin: 45px;
+    line-height: 0.7em;
+}
+
+.card-front {
+    background-color: #210B2C;
+    color: #FFB6C1;
+    font-size: 25px;
+}
+
+.card-back {
+    background-color: #FFB6C1;
+    color: #210B2C;
+    transform: rotateY(180deg);
+}
+
+.card-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
